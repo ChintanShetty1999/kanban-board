@@ -31,6 +31,21 @@
   text-transform: capitalize;
 }
 
+.priority-low {
+  background: #5cb85c22;
+  color: #5cb85c;
+}
+
+.priority-normal {
+  background: #7c6af722;
+  color: #7c6af7;
+}
+
+.priority-high {
+  background: #e0525222;
+  color: #e05252;
+}
+
 .delete-btn {
   background: transparent;
   color: #444;
@@ -57,10 +72,10 @@
   color: #666;
   line-height: 1.5;
   margin-bottom: 8px;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 .due-date {
