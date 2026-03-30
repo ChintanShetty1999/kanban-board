@@ -8,12 +8,6 @@ interface Props {
 }
 
 export default function TaskCard({ task, onDragStart, onDelete }: Props) {
-  const priorityColors: Record<string, string> = {
-    low: '#5cb85c',
-    normal: '#7c6af7',
-    high: '#e05252',
-  }
-
   function isOverdue() {
     if (!task.due_date) return false
     return new Date(task.due_date) < new Date()
